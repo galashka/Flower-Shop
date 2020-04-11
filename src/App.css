@@ -7,13 +7,13 @@
 }
 
 body{
-  font-family: 'Oswald', sans-serif !important;
-  background: var(--mainWhite) !important;
+  font-family: 'Satisfy' !important;
   color: var(--mainDark) !important;
-}
+  background-color: whitesmoke;
+  }
 
 .text-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'April Fatface';
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
