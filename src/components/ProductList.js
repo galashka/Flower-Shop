@@ -7,10 +7,9 @@ export default class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className='py-5'>
+        <div>
           <div className='container'>
             <Title name='' title='Unique Bouquet Delivery'/>
-            
               <div className='row'>
                 <ProductConsumer>
                   {value => {

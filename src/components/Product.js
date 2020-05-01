@@ -28,8 +28,8 @@ export default class Product extends Component {
                   }}
                 >
                   {inCart ? (
-                    <p className="text-capitalize mb-0" disabled>
-                      added
+                    <p className="mb-0 font-size-18" disabled>
+                      Added to cart
                     </p>
                   ) : (
                     <i className="fas fa-plus"/>
@@ -40,7 +40,7 @@ export default class Product extends Component {
           </ProductConsumer>
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
-            <h5 className="text-blue font-italic mb-0">
+            <h5 className="font-bold mb-0">
               <span className="mr-1">$</span>
               {price}
             </h5>
@@ -63,21 +63,17 @@ Product.propTypes = {
 
 const ProductWrapper = styled.div`
   .card {
-    text-color: white;
-    border-color: black;
-    transition: all 1s linear;
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  }
+    display: flex;
+    border-color: none;
+    }
 
   .card-footer {
     background: transparent;
     border-top: transparent;
-    transition: all 1s linear;
-  }
+    }
 
   &:hover {
     .card {
-      border: 0.04rem solid rgba(0,0,0,0.2);
       box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     }
     .card-footer {
@@ -91,24 +87,24 @@ const ProductWrapper = styled.div`
   }
 
   .card-img-top {
-    transition : all 1s linear;
+    transition : all 3s linear;
   }
   
   .img-container: hover  .card-img-top {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
   }
 
   .cart-btn {
+    display: flex;
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0.2rem 0.2rem;
     background: transparent;
     border: none;
-    color: grey;
-    font-size:6rem;
-    border-radius: 0 0 0 0;
-    transform: translate(100%, 100%);
+    color: white;
+    font-size:4rem;
+    transform: translate(50%, 100%);
     transition : all 1s linear;
   }
   }
@@ -118,7 +114,7 @@ const ProductWrapper = styled.div`
   }
   
   .cart-btn: hover {
-    color: white;
+    color: pink;
     cursor: pointer;
   }
 `;
