@@ -28,8 +28,8 @@ export default class Product extends Component {
                   }}
                 >
                   {inCart ? (
-                    <p className="mb-0 font-size-18" disabled>
-                      Added to cart
+                    <p className="mb-0 font-size-8" disabled>
+                      ADDED
                     </p>
                   ) : (
                     <i className="fas fa-plus"/>
@@ -98,14 +98,15 @@ const ProductWrapper = styled.div`
   .cart-btn {
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: 0;
     background: transparent;
     border: none;
     color: white;
-    font-size:4rem;
-    transform: translate(50%, 100%);
-    transition : all 1s linear;
+    font-size: 3rem;
+    opacity: 50%;
+    // transform: translate(50%, 100%);
+    // transition : all 1s linear;
   }
   }
 
@@ -114,7 +115,6 @@ const ProductWrapper = styled.div`
   }
   
   .cart-btn: hover {
-    color: pink;
     cursor: pointer;
   }
 `;

@@ -9,7 +9,7 @@ export default class ProductList extends Component {
       <React.Fragment>
         <div>
           <div className='container'>
-            <Title name='' title='Unique Bouquet Delivery'/>
+            <Title name='' title='UNIQUE BOUQUET DELIVERY'/>
               <div className='row'>
                 <ProductConsumer>
                   {value => {
